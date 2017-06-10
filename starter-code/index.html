@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Ironhack cart</title>
 </head>
+
 <body>
+  <div class="container">
+    <div class="row header">
+      <div class="logo">
+        <h1> Ironhack<br>Merchandising shop </h1>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="all-items">
+        <li>
+          <div class="col-xs-2">
+            <span>IronBubbleHead</span>
+          </div>
+          <div class="col-xs-2">
+            <span class="item-price">25$</span>
+          </div>
+          <div class="col-xs-3">
+            <span class="quantity">QTY</span><input class="qty" type="number" value="0">
+          </div>
+          <div class="col-xs-2">
+            <span class="item-total">0.00$</span>
+          </div>
+          <div class="col-xs-3">
+            <button class="btn-delete">Delete</button>
+          </div>
+        </li>
+        <li>
+          <div class="col-xs-2">
+            <span>IronHackShirt</span>
+          </div>
+          <div class="col-xs-2">
+            <span class="item-price">15$</span>
+          </div>
+          <div class="col-xs-3">
+            <span class="quantity">QTY</span><input class="qty" type="number" value="0">
+          </div>
+          <div class="col-xs-2">
+            <span class="item-total">0.00$</span>
+          </div>
+          <div class="col-xs-3">
+            <button class="btn-delete">Delete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="row bottom">
+      <div class="col-xs-2">
+        <input id="item-desc" type="text" placeholder="Enter Description">
+      </div>
+      <div class="col-xs-2">
+        <input id="item-price" type="number" placeholder="Enter Price">
+      </div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-2"></div>
+      <div class="col-xs-3">
+        <button id="create-item">Create</button>
+      </div>
+    </div>
+
+    <div class="row logo">
+      <button class="btn btn-success">Caclulate Prices</button>
+    </div>
+    <div class="row logo">
+      <h2>Total Price: <span id="cart-total"></span></h2>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
+
 </html>
